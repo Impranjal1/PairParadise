@@ -1,0 +1,121 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f06, #ffba08);
+    box-sizing: border-box;
+}
+
+.game-container {
+    text-align: center;
+    max-width: 90vw;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.game-board {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    transition: transform 0.3s, background-color 0.3s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.flipped, .card.matched {
+    background-color: #ffeb3b;
+    color: #333;
+    cursor: default;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+
+.card span {
+    visibility: hidden;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+#restartButton, #hintButton, #startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover, #hintButton:hover, #startButton:hover {
+    background-color: #0b7dda;
+}
+
+#themeSelector, #gridSizeSelector {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#themeSelector:focus, #gridSizeSelector:focus {
+    border-color: #2196f3;
+}
+
+#leaderboard {
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+#leaderboardList {
+    padding-left: 0;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#leaderboardList li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
