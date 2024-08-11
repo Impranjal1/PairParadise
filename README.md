@@ -13,7 +13,7 @@ Welcome to the Memory Match Game! 🎉 A fun and interactive memory card game bu
 
 1. Clone the Repository:
   '''bash
-   git clone https://github.com/yourusername/memory-match-game.git
+   git clone https://github.com/Impranjal1/memory-match-game.git
   
 
 2. Navigate to the Project Directory:
