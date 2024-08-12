@@ -47,7 +47,7 @@ Feel free to fork this repository and submit pull requests. If you encounter any
 
 For any questions or feedback, please contact 
 Pranjal Srivastava 
-(pranjalsrivastava.2021@gmail.com)
+(https://github.com/Impranjal1/)
  🌟 Acknowledgements
 
 - Thanks to [FontAwesome](https://fontawesome.com/) for the icons used in the project.
